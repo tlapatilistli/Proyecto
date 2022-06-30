@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+/*!
+* Start Bootstrap - Agency v7.0.10 (https://startbootstrap.com/theme/agency)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+/*****/
+
+
+/** Despegable **/
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #80a00a;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: #ffc800;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.912);
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #48ff30c9;
+  
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+/*---------------------------- preloader area ----------------------------*/
+ .loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #fff;
+     width: 100%;
+     height: 100%;
+}
+ .loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ .loader img {
+     width: 280px;
+}
+/** menu y imagen header**/
+
+
+header.masthead {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: left;
+  color: #418610e3;
+  background-image: url("../img/Presentación1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+/** equipo **/
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 12rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4, .team-member .h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.img-brand {
+  height: 2.75rem;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+}
+
+.text-center {
+  text-align: center !important;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+/********* portafolio********/
+.img-fluid {
+  max-width: 100%;
+  height: 250px;
+  width:250px;
+}
+
+/************/
+
+/** end your life yoga **/
+/** our pricing **/
+.pricing {
+  margin-top: 90px;
+  background: #fff;
+}
+.pricing_packages_bg {
+  background: #ff8c00;
+  padding: 80px 0px;
+}
+.pricing .pricing_box {
+  text-align: center;
+ padding-bottom:10px;
+}
+.pricing .pricing_box h3 {
+  font-size: 27px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #020500;
+  padding: 35px 0px;
+}
+.pricing .pricing_box span {
+  color: #58c62c;
+  font-size: 90px;
+  font-weight: bold;
+  padding-top: 85px;
+  line-height: 90px;
+  display: inline-block;
+}
+.pricing .pricing_box p {
+  color: #000;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 20px 10px 85px 10px;
+}
+.pricing_box_cross {
+ text-align: center;
+  box-shadow: #dddd 0px 0px 18px 6px;
+  padding-bottom:10px;
+}
+.pricing_box_cross::after {
+  content:"";
+  background: url(../images/img.png);
+  position: absolute;
+  width: 92%;
+  height: 70px;
+  left: 15px;
+  bottom: -8px;
+  background-repeat: no-repeat;
+  background-size: 100% 100% 
+}
+.pricing .pricing_box_cross h3 {
+  font-size: 27px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #58c62c;
+  padding: 35px 0px;
+}
+.pricing .pricing_box_cross span {
+  color: #58c62c;
+  font-size: 90px;
+  font-weight: bold;
+  padding-top: 60px;
+  line-height: 90px;
+  display: inline-block;
+}
+.pricing .pricing_box_cross p {
+  color: #000;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 20px 10px 55px 10px;
+}
+.pricing_box_cross .white_bold {
+  color: #020500;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 90px;
+}
+.SelectPlan {
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  color: #050000;
+  max-width: 202px;
+  padding: 12px 0px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  border:#35a30a solid 1px;
+}
+.SelectPlan:hover {
+  color: #fff;
+  background: #000000;
+  border:#050000 solid 1px;
+}
+/** end our pricing **/
+.title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.title h2 {
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 46px;
+  color: #58c62c;
+  padding-bottom: 20px;
+}
+/** Newsletter **/
+.Newsletter {
+ background: #58c62c;
+  padding: 70px 0px;
+  margin-top: 90px;
+}
+.Newsletter .news h2 {
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 46px;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 17px;
+  text-align: center;
+}
+.new_botton {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.new_botton .tetter {
+  padding: 10px 20px;
+  border-radius: inherit;
+  border: inherit;
+  width: 39%;
+}
+.submit {
+  background: #070100;
+  margin-left: -3px;
+  padding: 9px 50px;
+  color: #fff;
+}
+.submit:hover {
+  background: #ddd;
+  color: #000;
+}
+/** end Newsletter **/
+/** yoga online **/
+.yoga {
+  padding-top: 90px;
+  background: #fff;
+}
+.yoga .title {
+ padding-bottom: 130px;
+}
+.yoga .title h2 {
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 46px;
+  color: #58c62c;
+  padding: 0px;
+}
+.yoga .yoga_box {
+  text-align: center;
+  background: #58c62c;
+}
+.yoga .yoga_box figure {
+ margin:0;
+}
+.yoga .yoga_box img{
+  margin-top: -70px;
+  padding-bottom: 70px !important;
+  padding: 0px 115px;
+}
+.yoga .yoga_box p {
+  color: #000;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+}
+/** end  online **/
+
+section#contact {
+  background-color: #7ac57370;
+  background-image: url(img/logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-section {
+  padding: 6rem 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/****boton flotante***/
+.mensaje {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:30px;
+  background-color:#ffa600;
+  color:#FFF;
+  border-radius:60px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+/***accesibilidad***/
+
+.sticky-container{
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:1130px;
+  top:230px;
+  width:250px;
+  z-index: 1100;
+}
+.sticky li{
+
+  margin:0px 0px 1px 0px;
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out;
+  cursor:pointer;
+}
+.sticky li:hover{
+  margin-left:10px;
+}
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+ /*****************/
